@@ -1,0 +1,42 @@
+{
+  "extends": "@sindresorhus/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "dist",
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es6",
+      "ES2015",
+      "ES2017",
+      "ES2018",
+      "ES2020"
+    ],
+    "noEmit": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "src/**/*",
+    "api/**/*",
+    "db/**/*",
+    "components/**/*",
+    "lib/**/*",
+    "migrations/**/*",
+    "types/**/*",
+
+    //    "test/**/*"
+  ],
+  "exclude": [
+    "dist/**/*",
+    "node_modules",
+    "examples/**/*",
+    "docs/**/*"
+    //    "test/**/*"
+  ]
+}
